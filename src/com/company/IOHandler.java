@@ -31,11 +31,11 @@ public class IOHandler{
     public void read (Tamagotchi tamagotchi) {
         try {
             int input = scannerT.scan();
-            if (input == 1) {
+            if (input == INPUT_COMER) {
                 this.printer.printHaComido();
                 tamagotchi.comer();
                 read(tamagotchi);
-            } else if (input == 2) {
+            } else if (input == INPUT_JUGAR) {
                 this.printer.printHaJugado();
                 tamagotchi.jugar();
                 read(tamagotchi);
